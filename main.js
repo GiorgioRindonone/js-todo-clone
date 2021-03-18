@@ -25,7 +25,7 @@ for (var i = 0; i < listaSpesa.length; i++) {
 // creare una todo list che permatta di aggiungere (tramite campo input)
 $('#input-list').keydown(function(evento) {
 
-  if (evento.wich == 13) {
+  if (evento.which == 13) {
 
     var testo = $(this).val();
     if (testo != "") {
@@ -39,6 +39,23 @@ $('#input-list').keydown(function(evento) {
 
 });
 // e rimuovere gli elementi!
+// $(document).on('click', '.span-delete', function() {
+//   $(this).parent().remove().fadeOut();
+// });
+
 $(document).on('click', '.span-delete', function() {
-  $(this).parent().remove();
+  $('.background').css({
+    "background-image": "url(img/boom.png)"});
+});
+
+$(document).on('mouseleave', '.span-delete', function() {
+  $('.background').css({
+    "background-image": ""});
+});
+
+// gli applico alla call back di slide, remove, in modo da poter settare i secondi
+$(document).on('click', '.span-delete', function() {
+  $(this).parent().slideToggle(500, function(){
+    $(this).remove();
+  });
 });

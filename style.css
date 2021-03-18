@@ -9,3 +9,98 @@
 .clone {
   display: none;
 }
+input {
+  width: 360px;
+  text-align: center;
+  height: 40px;
+  background-color: rgba(255, 255,255, 0.5);
+  flex-shrink: 0;
+
+}
+
+
+h1{
+  text-align: center;
+  margin-top:;
+  text-transform: uppercase;
+  color: black;
+  filter: drop-shadow(16px 16px 10px black);
+  margin: 20px 0px;
+}
+.backmain {
+  width: 100%;
+  height: 100vh;
+  background-image: url(img/explosion.png);
+  background-position: center;
+  background-size: 700px;
+  background-repeat: no-repeat;
+}
+.background{
+  width: 100%;
+  height: 100%;
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content-main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.content li {
+  list-style: none;
+  border: 1px grey solid;
+  border-radius: 5px;
+  padding: 5px 5px;
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  font-weight: bolder;
+  color: white;
+  margin: 5px;
+}
+.content ul {
+  overflow-y: auto;
+  margin: 20px 5px;
+}
+
+.content li:hover, input:hover {
+  background-color: yellow;
+  transition: all ease 1s;
+  color: black;
+}
+
+.content {
+  padding: 50px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 400px;
+  height: 400px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  border-radius: 25px;
+  filter: drop-shadow(16px 16px 10px black);
+
+}
+
+span {
+  color: red;
+  /* border: 2px black solid;
+  border-radius: 50%;
+  padding: 1px;
+  margin: 5px; */
+}
+span:hover{
+  cursor:  pointer;
+}
+span:focus{
+
+}
