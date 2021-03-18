@@ -29,6 +29,7 @@ $('#input-list').keydown(function(evento) {
 
     var testo = $(this).val();
     if (testo != "") {
+      var template = $('.clone li').clone();
       template.prepend(testo);
       $(".ul-content").append(template);
       $(this).val('');
